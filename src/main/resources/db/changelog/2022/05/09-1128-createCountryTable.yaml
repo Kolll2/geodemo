@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-country
+      author: kosh
+      changes:
+        - createTable:
+            tableName: country
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(200)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: population
+                  type: bigint
+                  constraints:
+                    nullable: false
