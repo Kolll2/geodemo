@@ -1,0 +1,132 @@
+GET http://localhost:8080/countries?page=1
+
+<> 2022-05-16T215740.200.json
+
+###
+
+GET http://localhost:8080/countries?page=0
+
+<> 2022-05-16T215734.200.json
+
+###
+
+GET http://localhost:8080/countries
+
+<> 2022-05-16T215731.200.json
+
+###
+
+GET http://localhost:8080/countries
+
+<> 2022-05-16T215649.200.json
+
+###
+
+GET http://localhost:8080/countries
+
+<> 2022-05-16T215408.200.json
+
+###
+
+GET http://localhost:8080/countries
+
+<> 2022-05-16T215103.400.json
+
+###
+
+GET http://localhost:8080/countries?page=1
+
+<> 2022-05-16T215055.200.json
+
+###
+
+GET http://localhost:8080/countries?page=0
+
+<> 2022-05-16T215041.200.json
+
+###
+
+GET http://localhost:8080/countries
+
+<> 2022-05-16T191326.200.json
+
+###
+
+GET http://localhost:8080/countries/0
+
+<> 2022-05-16T191319.200.json
+
+###
+
+GET http://localhost:8080/countries/1
+
+<> 2022-05-16T191307.200.json
+
+###
+
+GET http://localhost:8080/countries/1
+
+<> 2022-05-16T160212.200.json
+
+###
+
+GET http://localhost:8080/countries/0
+
+<> 2022-05-16T160147.200.json
+
+###
+
+GET http://localhost:8080/countries/0
+
+<> 2022-05-16T154357.200.json
+
+###
+
+GET http://localhost:8080/countries/0
+
+<> 2022-05-16T154144.200.json
+
+###
+
+GET http://localhost:8080/countries
+
+<> 2022-05-16T152312.200.json
+
+###
+
+GET http://localhost:8080/countries
+
+<> 2022-05-16T152049.200.json
+
+###
+
+GET http://localhost:8080/countries
+
+<> 2022-05-15T222415.200.json
+
+###
+
+GET http://localhost:8080/countries
+
+###
+
+GET http://localhost:8080/countries
+
+###
+
+GET http://localhost:8080/countries
+
+<> 2022-05-15T220656.200.json
+
+###
+
+GET http://localhost:8080/countries
+
+<> 2022-05-09T104702.200.json
+
+###
+
+GET http://localhost:8080/countries
+
+###
+

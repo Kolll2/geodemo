@@ -2,7 +2,7 @@ spring:
   liquibase:
     enabled: true
   datasource:
-    url: jdbc:postgresql://localhost/country
+    url: jdbc:postgresql://localhost/geodemo
     username: root
     password: root
   jpa:
