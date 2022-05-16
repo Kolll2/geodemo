@@ -5,6 +5,7 @@ import com.kosh.geodemo.entity.CountryEntity
 import com.kosh.geodemo.repository.CountryRepository
 import com.kosh.geodemo.service.CountryService
 import org.springframework.data.domain.PageRequest
+import org.springframework.data.repository.findByIdOrNull
 import org.springframework.stereotype.Service
 
 private const val LOAD_PAGE_SIZE = 10
@@ -23,6 +24,15 @@ class CountryServiceImpl(
         return countryRepository.findByOrderByName(PageRequest.of(page, LOAD_PAGE_SIZE))
             .map { it.toDto() }
     }
+
+    override fun getById(id: Int): CountryDto =
+        countryRepository.findByIdOrNull(id)
+            ?.toDto()
+            ?: throw RuntimeException("Country not found")
+
+    override fun search(prefix: String): List<CountryDto> =
+        countryRepository.findByNameStartsWithIgnoreCaseOrderByName(prefix)
+            .map { it.toDto() }
 
     private fun CountryEntity.toDto(): CountryDto =
         CountryDto(

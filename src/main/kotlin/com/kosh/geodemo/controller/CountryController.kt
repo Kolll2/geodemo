@@ -2,10 +2,7 @@ package com.kosh.geodemo.controller
 
 import com.kosh.geodemo.dto.CountryDto
 import com.kosh.geodemo.service.CountryService
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RequestParam
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/countries")
@@ -16,4 +13,10 @@ class CountryController(
     @GetMapping
     fun getAll(@RequestParam(defaultValue = "-1") page: Int): List<CountryDto> = countryService.getOrderByNamePage(page)
 
+    @GetMapping("/{id}")
+    fun getById(@PathVariable("id") id: Int): CountryDto =
+        countryService.getById(id)
+
+    @GetMapping("/search")
+    fun searchCountry(@RequestParam("prefix") prefix: String): List<CountryDto> = countryService.search(prefix)
 }

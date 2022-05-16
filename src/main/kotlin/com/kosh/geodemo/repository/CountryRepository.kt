@@ -8,4 +8,5 @@ interface CountryRepository : CrudRepository<CountryEntity, Int> {
 
     fun findByOrderByName(): List<CountryEntity>
     fun findByOrderByName(pageable: Pageable): List<CountryEntity>
+    fun findByNameStartsWithIgnoreCaseOrderByName(prefix: String): List<CountryEntity>
 }
